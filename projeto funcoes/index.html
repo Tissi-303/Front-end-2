@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TED - Funções (Altura e Gênero)</title>
+</head>
+<body>
+  <h2>TED - Funções: Altura e Gênero</h2>
+  <p>Informe a altura (em metros) e o gênero (M ou F) de 15 pessoas.</p>
+
+  <label>Altura (m):</label>
+  <input type="number" id="altura" step="0.01" placeholder="Ex: 1.75">
+  <label>Gênero:</label>
+  <select id="genero">
+    <option value="">Selecione</option>
+    <option value="M">Masculino</option>
+    <option value="F">Feminino</option>
+  </select>
+  <button onclick="adicionarPessoa()">Adicionar</button>
+  <button onclick="calcularResultados()">Calcular</button>
+  <button onclick="resetar()">Resetar</button>
+
+  <p id="contador"></p>
+  <div id="resultado"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
